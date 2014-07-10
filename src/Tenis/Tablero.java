@@ -41,7 +41,7 @@ int puntos_jugador2;
     
     }
     
-    private void traducirEspanol(){
+    private void traducir(){
     
         
     
