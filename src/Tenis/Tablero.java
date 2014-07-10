@@ -84,6 +84,7 @@ int puntos_jugador2;
         puntaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         puntaje.setText("Love-All");
 
+        marcador.setFont(new java.awt.Font("Aharoni", 0, 24)); // NOI18N
         marcador.setForeground(new java.awt.Color(255, 0, 0));
         marcador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
