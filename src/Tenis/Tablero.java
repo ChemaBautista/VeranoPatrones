@@ -155,7 +155,7 @@ int puntos_jugador2;
         // TODO add your handling code here:
    puntos_jugador1++;
     
-     while (puntos_jugador1==7){
+     while (puntos_jugador1==7 || puntos_jugador1==5){
         
         boton_jugador1.setVisible(false);
         JOptionPane.showMessageDialog(rootPane, "juego finalizado");
@@ -165,38 +165,75 @@ int puntos_jugador2;
     
        marcador.setText(puntos_jugador1+" - "+ puntos_jugador2);
         if (puntos_jugador1==1 && puntos_jugador2==0){
-            puntaje.setText("Fifteen-Love");
-            
+       // puntaje.setText("Fifteen-Love");
+            puntaje.setText("Quince - Cero");
+        } else if(puntos_jugador1==1 && puntos_jugador2==2){
+       // puntaje.setText("fifteen-Thirty");
+            puntaje.setText("Quince - Treinta");
+        
+        } else if(puntos_jugador1==1 && puntos_jugador2==1){
+       // puntaje.setText("fifteen-all");
+            puntaje.setText("Quince  Iguales");
+        
         }else if(puntos_jugador1==2 && puntos_jugador2==0){
-        puntaje.setText("Thirty-Love");
+       // puntaje.setText("Thirty-Love");
+            puntaje.setText(" Treinta - cero");
         
         } else if(puntos_jugador1==2 && puntos_jugador2==1){
-        puntaje.setText("Thirty-fifteen");
+       // puntaje.setText("Thirty-fifteen");
         
+            puntaje.setText("Treinta - Quince");
+            
           } else if(puntos_jugador1==2 && puntos_jugador2==2){
-        puntaje.setText("Thirty-All");
+       // puntaje.setText("Thirty-All");
+              puntaje.setText("Treinta -  Treinta");
         
           } else if(puntos_jugador1==3 && puntos_jugador2==0){
-        puntaje.setText("Forty-love");
+       // puntaje.setText("Forty-love");
+              puntaje.setText("Cuarenta - cero ");
         
          } else if(puntos_jugador1==3 && puntos_jugador2==1){
-        puntaje.setText("Forty-fifteen");
-        
+       // puntaje.setText("Forty-fifteen");
+             
+        puntaje.setText("Cuarenta - Quince ");
           } else if(puntos_jugador1==3 && puntos_jugador2==2){
-        puntaje.setText("Forty-thirty");
+        //puntaje.setText("Forty-thirty");
+              puntaje.setText("Cuarenta - Treita");
         
         } else if(puntos_jugador1==3 && puntos_jugador2==3){
-        puntaje.setText("Deuce");
-        
+       // puntaje.setText("Deuce");
+            puntaje.setText("Empate");
+            
+             } else if(puntos_jugador1==4 && puntos_jugador2==2){
+       // puntaje.setText("Advantages Jugador 1");
+            puntaje.setText("Gana jugador 1 ");
+       
+        JOptionPane.showMessageDialog(rootPane, "juegador 1 gana");
+         
         } else if(puntos_jugador1==4 && puntos_jugador2==3){
-        puntaje.setText("Advantages Jugador 1");
+       // puntaje.setText("Advantages Jugador 1");
+            puntaje.setText("Ventaja para jugador 1");
         
         }else if(puntos_jugador1==4 && puntos_jugador2==4){
+        puntaje.setText("Deuce");
+        
+        } else if(puntos_jugador1==5 && puntos_jugador2==5){
         puntaje.setText("Deuce");
         
         }else if(puntos_jugador1==5 && puntos_jugador2==4){
         puntaje.setText("Advance Jugador 1");
         
+         }else if(puntos_jugador1==4&& puntos_jugador2==0){
+        puntaje.setText("Jugador 1 gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 1 gana");
+        
+        }else if(puntos_jugador1==4&& puntos_jugador2==1){
+        puntaje.setText("Jugador 1 gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 1 gana");
+        
+         }else if(puntos_jugador1==5&& puntos_jugador2==3){
+        puntaje.setText("Jugador 1 gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 1 gana");
         
          }else if(puntos_jugador1==6 && puntos_jugador2==4){
          puntaje.setText("Jugador 1 gana");
@@ -211,7 +248,7 @@ int puntos_jugador2;
          marcador.setText(puntos_jugador1+" - "+ puntos_jugador2);
          
          
-          while (puntos_jugador2==7){
+          while (puntos_jugador2==7 || puntos_jugador2 ==5){
         
         boton_jugador2.setVisible(false);
         JOptionPane.showMessageDialog(rootPane, "juego finalizado");
@@ -220,37 +257,61 @@ int puntos_jugador2;
     }
         if (puntos_jugador1==0 && puntos_jugador2==1){
      
-            puntaje.setText("Love_Fifteen");
+            //puntaje.setText("Love_Fifteen");
+            puntaje.setText("cero -  quince ");
+            
         
      }else if(puntos_jugador1==0 && puntos_jugador2==2){
-        puntaje.setText("Love-Thirty");
+        //puntaje.setText("Love-Thirty");
+         puntaje.setText("Cero -  Treinta");
         
         } else if(puntos_jugador1==1 && puntos_jugador2==2){
-        puntaje.setText("fifteen-Thirty");
+        puntaje.setText("Quince -  treinta ");
+        
+         } else if(puntos_jugador1==1 && puntos_jugador2==1){
+        puntaje.setText("Quince  Iguales");
         
         }else if (puntos_jugador1==2 && puntos_jugador2==2){
-         puntaje.setText("All-Thirty");
+         puntaje.setText("treinta igueles");
          
            } else if(puntos_jugador1==2 && puntos_jugador2==3){
-        puntaje.setText("Thirty-Forty");
+        puntaje.setText("Treinta - Cuarenta");
         
           } else if(puntos_jugador1==3 && puntos_jugador2==3){
-        puntaje.setText("Deuce");
+        puntaje.setText("Empate");
         
          } else if(puntos_jugador1==3 && puntos_jugador2==4){
-        puntaje.setText("Advantages Jugador 2");
+        puntaje.setText("Ventaja Jugador 2");
         
        
          } else if(puntos_jugador1==4 && puntos_jugador2==4){
-        puntaje.setText("Deuce");
+        puntaje.setText("Empate ");
+        
+         } else if(puntos_jugador1==5 && puntos_jugador2==5){
+        puntaje.setText("Empate");
         
           }else if(puntos_jugador1==4 && puntos_jugador2==5){
         puntaje.setText("Advance Jugador 2");
         
          }else if(puntos_jugador1==4 && puntos_jugador2==6){
         puntaje.setText("Jugador 2 Gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 2 gana");
         
+        }else if(puntos_jugador1==0 && puntos_jugador2==4){
+        puntaje.setText("Jugador 2 Gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 2 gana");
         
+        }else if(puntos_jugador1==3 && puntos_jugador2==5){
+        puntaje.setText("Jugador 2 Gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 2 gana");
+        
+        }else if(puntos_jugador1==1&& puntos_jugador2==4){
+        puntaje.setText("Jugador 2 gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 2 gana");
+         }
+        else if(puntos_jugador1==2&& puntos_jugador2==4){
+        puntaje.setText("Jugador 2 gana");
+        JOptionPane.showMessageDialog(rootPane, "juegador 2 gana");
          }
     }//GEN-LAST:event_boton_jugador2MouseClicked
 
