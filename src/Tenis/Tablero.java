@@ -209,6 +209,15 @@ int puntos_jugador2;
         // TODO add your handling code here:
         puntos_jugador2++;
          marcador.setText(puntos_jugador1+" - "+ puntos_jugador2);
+         
+         
+          while (puntos_jugador2==7){
+        
+        boton_jugador2.setVisible(false);
+        JOptionPane.showMessageDialog(rootPane, "juego finalizado");
+        new Tablero().setVisible(true);
+        reset();
+    }
         if (puntos_jugador1==0 && puntos_jugador2==1){
      
             puntaje.setText("Love_Fifteen");
